@@ -9,12 +9,19 @@
   <meta name="description" content="MindSpace - A mindfulness and wellness app designed for students." />
   <title>MindSpace</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
 <body>
   <header class="hero">
+    
+    <div class="hero__content">
+      <h1>HERO SECTION</h1>
+      <p>Discover MindSpace your personal mindfulness companion designed for students.Experience stress relief and balance through our science-backed exercises.</p>
+      <div class="hero__buttons">
+        <button class="btn btn--primary" onclick="downloadApp()">Download</button>
+        <a href="#explore" class="btn btn--secondary">Learn More</a>
+      </div>
     <div class="hero__image-container">
          <picture>
     <source media="(max-width: 768px)" srcset="woman-image small.jpg">
@@ -22,13 +29,6 @@
     <img src="woman-image.jpg" alt="Person Meditating" class="hero__image">
   </picture>
     </div>
-    <div class="hero__content">
-      <h1>Discover MindSpace – your personal mindfulness companion designed for students.</h1>
-      <p>Experience stress relief and balance through our science-backed exercises.</p>
-      <div class="hero__buttons">
-        <button class="btn btn--primary" onclick="downloadApp()">Download</button>
-        <a href="#explore" class="btn btn--secondary">Learn More</a>
-      </div>
     </div>
   </header>
 
@@ -56,8 +56,7 @@
     </section>
 
     <section id="explore" class="explore">
-      <div class="another-image">
-      <img src="girl image.jpg" alt="woman sitting with a laptop and a cup" class="hero__image" />
+      
       <h2>Discover the Power of Mindfulness</h2>
       <p>MindSpace offers intuitive tools to help you manage stress and enhance your well-being.</p>
       <p class="explore__highlight">Designed specifically for students, making mindfulness accessible anytime, anywhere.</p>
@@ -68,12 +67,15 @@
       </ul>
       <button onclick="downloadApp()">Download</button>
       <button>Learn More</button>
+      <div class="another-image">
+      <img src="girl image.jpg" alt="woman sitting with a laptop and a cup" class="hero__image" />
     </section>
 
     <section class="testimonial">
       
       </div>
       <div class="testimonial__card">
+        <p class="user__rating">★★★★★</p>
         <h3>User testimonials</h3>
         <blockquote>
           <p>"MindSpace has transformed my approach to stress management. The exercises are quick and effective, making it easy to fit into my busy schedule."</p>
@@ -84,13 +86,14 @@
           
           <p class="user__name">Emily Johnson</p>
           <p class="user__affiliation">Student, University</p>
-          <p class="user__rating">★★★★★</p>
+          
         </div>
       </div>
     </section>
 
     <section class="team">
-      <h2>Meet the Team</h2>
+      <h2>MEET THE THERAPISTS</h2>
+      <P>Meet the dedicated professionals behind mindspace</P>
       <div class="team__grid">
         <article class="team__member">
           <img src="daniel.png" alt="Daniel Berhanu holding a laptop" />
