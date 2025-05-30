@@ -1,172 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<title>mindspace</title>
 <head>
-    <meta charset="UTF-8"  />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"  />
-    <title>MindSpace</title>
-<link rel="stylesheet" href="styles.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="MindSpace Team" />
+  <meta name="description" content="MindSpace - A mindfulness and wellness app designed for students." />
+  <title>MindSpace</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <header class="hero-section">
-        <div class="hero-image-container">
-            <img src="woman image.jpg" alt="Person Meditating" class="hero-image">
-        </div>
-        <div class="hero-content">
-            <h1>Discover MindSpace, your personal mindfulness companion designed for students.</h1>
-            <p>Experience stress relief and balance through our science-backed exercises.</p>
-            <div class="hero-buttons">
-                <button class="primary-button" onclick="downloadApp()">Download</button>
-                <a href="#explore" class="secondary-button">Learn More</a>
-            </div>
-        </div>
-    </header>
+  <header class="hero">
+    <div class="hero__image-container">
+         <picture>
+    <source media="(max-width: 768px)" srcset="woman-image small.jpg">
+    <source media="(max-width: 1200px)" srcset="woman-image medium.jpg">
+    <img src="woman-image.jpg" alt="Person Meditating" class="hero__image">
+  </picture>
+    </div>
+    <div class="hero__content">
+      <h1>Discover MindSpace – your personal mindfulness companion designed for students.</h1>
+      <p>Experience stress relief and balance through our science-backed exercises.</p>
+      <div class="hero__buttons">
+        <button class="btn btn--primary" onclick="downloadApp()">Download</button>
+        <a href="#explore" class="btn btn--secondary">Learn More</a>
+      </div>
+    </div>
+  </header>
 
-
-    <section class="feature-section">
-        <h2>Transform Your Mindset with Our Innovative Features</h2>
-        <div class="feature-grid">
-            <article>
-                <h3>Track your mood effortlessly</h3>
-                <p>Gain insights into your emotional well-being.</p>
-                <button onclick="scrollToSection('explore')">Learn More</button>
-            </article>
-            <article>
-                <h3>Breathe Easy</h3>
-                <p>Engage in guided breathing exercises to reduce stress and enhance focus.</p>
-                <button>Start Now</button>
-            </article>
-            <article>
-                <h3>Reflect and Grow</h3>
-                <p>Capture your thoughts and feelings in a safe, private space.</p>
-                <button>Join Us</button>
-            </article>
-        </div>
+  <main>
+    <section class="features">
+      <h2>Transform Your Mindset with Our Innovative Features</h2>
+      <div class="features__grid">
+        <article>
+          
+          <h3>Mood Tracking</h3>
+           <p>Gain insights into your emotional well-being with daily mood tracking.</p>
+           <button onclick="scrollToSection('explore')">Learn More</button>
+        </article>
+        <article>
+          <h3>Guided Breathing</h3>
+          <p>Reduce stress and enhance focus with guided breathing exercises.</p>
+          <button>Start Now</button>
+        </article>
+        <article>
+          <h3>Daily Journaling</h3>
+          <p>Capture your thoughts and feelings in a safe, private space.</p>
+          <button>Join Us</button>
+        </article>
+      </div>
     </section>
 
     <section id="explore" class="explore">
-        <h2>Discover the Power of Mindfulness</h2>
-        <p>Mindspace offers intuitive tools to help you manage stress and enhance your wellbeing</p>
-        <p class="explanation-point">Our app is designed specifically for students making mindfullness accessible anytime,anywhere.</p>
-        <ul>
-            <li>Track your mood effortlessly with our user-friendly interface.</li>
-            <li>Breathe deeply and find your calm in minutes.</li>
-            <li>Journal your thoughts to reflect and grow daily.</li>
-        </ul>
-        <button onclick="downloadApp()">Download</button>
-        <button>Learn More</button>
+      <div class="another-image">
+      <img src="girl image.jpg" alt="woman sitting with a laptop and a cup" class="hero__image" />
+      <h2>Discover the Power of Mindfulness</h2>
+      <p>MindSpace offers intuitive tools to help you manage stress and enhance your well-being.</p>
+      <p class="explore__highlight">Designed specifically for students, making mindfulness accessible anytime, anywhere.</p>
+      <ul>
+        <li>Track your mood effortlessly with our user-friendly interface.</li>
+        <li>Breathe deeply and find your calm in minutes.</li>
+        <li>Journal your thoughts to reflect and grow daily.</li>
+      </ul>
+      <button onclick="downloadApp()">Download</button>
+      <button>Learn More</button>
     </section>
 
     <section class="testimonial">
-         <div class="testimonial-image-container">
-    <img src="girl image.jpg" alt="Woman sitting by a misty lake with a laptop" class="testimonial-image">
-</div>
-       <div class="testimonial-card">
-  <div class="rating">
-        
-  </div>
-  <h3 class="testimonial-heading">USER TESTIMONIALS</h3>
-  <blockquote class="testimonial-quote">
-    <p>"MindSpace has transformed my approach to stress management. The exercises are quick and effective, making it easy to fit into my busy schedule."</p>
-  </blockquote>
-  <div class="user-info">
-    <div class="user-image">
-      <img src="testimony girl.jpg" alt="Emily Johnson">
-    </div>
-    <p class="user-name">Emily Johnson</p>
-    <p class="user-affiliation">Student, University</p>
-    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-  </div>
-</div>
-
-        
+      
+      </div>
+      <div class="testimonial__card">
+        <h3>User testimonials</h3>
+        <blockquote>
+          <p>"MindSpace has transformed my approach to stress management. The exercises are quick and effective, making it easy to fit into my busy schedule."</p>
+      <div class="testimonial__image-container">
+        <img src="testimony girl.jpg" alt="Woman sitting by a misty lake with a laptop" class="testimonial__image" />
+        </blockquote>
+        <div class="testimonial__user">
+          
+          <p class="user__name">Emily Johnson</p>
+          <p class="user__affiliation">Student, University</p>
+          <p class="user__rating">★★★★★</p>
+        </div>
+      </div>
     </section>
 
     <section class="team">
-        <h2>Our Team</h2>
-<div class="team-grid">
-      <div class="founder-image-container">
-    <img src="daniel.png" alt="man holding a laptop" class="founder-image">
-    
-    <div class="member"><h3>Daniel Berhanu</h3><p>Founder Therapist</p><p>Dabiel is passionate about helping students find balance and peace through mindfullness</p></div>
-        
-    <div class="coach-image-container">
-    <img src="sarah.png" alt="Woman sitting down" class="a mental coach">     
-    
-    <div class="member"><h3>Sarah Lee</h3><p>Mental Coach</p><p>Sarah specializes in cognitive behavioral techniques to support student wellness</p></div>
-         
-      <div class="advocate-image-container">
-    <img src="michael.jpg" alt="man sittind down" class="advocate-image">
-     
-    <div class="member"><h3>Michael Chen</h3><p>Wellness Advocate </p><p>Michael focuses on holistic approaches to enhance mental health among students</p></div>
-           
-  <div class="specialist-image-container">
-    <img src="emily.jpg" alt="lady sitted" class="specialist-image">
-
-     <div class="member"><h3>Emily Tran</h3><p>Support Specialist</p><p>Emily provides guidance and support to users navigating their mental health journey</p></div>
-            
-  <div class="content-image-container">
-    <img src="laura.jpg" alt="lady sitted down" class="content creator-image">
-
-<div class="member"><h3>Laura Kim</h3><p>Content Creator</p><p>Laura crafts engaging content that resonates with student's mental health needs</p></div>
-        </div>
+      <h2>Meet the Team</h2>
+      <div class="team__grid">
+        <article class="team__member">
+          <img src="daniel.png" alt="Daniel Berhanu holding a laptop" />
+          <h3>Daniel Berhanu</h3>
+          <p>Founder & Therapist</p>
+          <p>Daniel is passionate about helping students find balance and peace through mindfulness.</p>
+        </article>
+        <article class="team__member">
+          <img src="sarah.png" alt="Sarah Lee sitting down" />
+          <h3>Sarah Lee</h3>
+          <p>Mental Coach</p>
+          <p>Sarah specializes in cognitive behavioral techniques to support student wellness.</p>
+        </article>
+        <article class="team__member">
+          <img src="michael.jpg" alt="Michael Chen sitting down" />
+          <h3>Michael Chen</h3>
+          <p>Wellness Advocate</p>
+          <p>Michael focuses on holistic approaches to enhance student mental health.</p>
+        </article>
+        <article class="team__member">
+          <img src="emily.jpg" alt="Emily Tran seated" />
+          <h3>Emily Tran</h3>
+          <p>Support Specialist</p>
+          <p>Emily provides guidance and support to users on their mental health journey.</p>
+        </article>
+        <article class="team__member">
+          <img src="laura.jpg" alt="Laura Kim seated" />
+          <h3>Laura Kim</h3>
+          <p>Content Creator</p>
+          <p>Laura crafts engaging content that resonates with students' mental health needs.</p>
+        </article>
+      </div>
     </section>
 
     <section class="careers">
-  <div class="career-image-container">
-    <img src="hiring.png" alt="logo to show hiring" class="hiring image">
-
-        <h2>We're hiring!</h2>
-
+      <div class="careers__content">
+        <img src="hiring.png" alt="We're hiring" class="careers__image" />
+        <h2>We're Hiring!</h2>
         <p>Explore exciting opportunities to make a difference in student wellness.</p>
-        <button>Open Positions</button>
+        <button>View Open Positions</button>
         <p>Be part of a team dedicated to improving mental health for students everywhere.</p>
+      </div>
     </section>
 
     <section class="contact">
-        
-        <div class="contact-image-container">
-    <img src="contact.jpg" alt="logo to show contact u" class="contact image">
-
+      <div class="contact__content">
+        <img src="contact.jpg" alt="Contact us" class="contact__image" />
         <h2>Contact Us</h2>
         <p>We'd love to hear from you about joining our mission.</p>
         <form onsubmit="validateForm(event)">
-              <input type="text" placeholder="Full name" required>
-             <input type="text" placeholder="Job title" required>
-             <textarea placeholder="Your message"></textarea>
-             <button type="submit">Send</button>
+          <input type="text" placeholder="Full Name" required />
+          <input type="text" placeholder="Job Title" required />
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit">Send</button>
         </form>
+      </div>
     </section>
 
-    <section class="call-to-action-community">
-    <h2>Join the MindSpace Community</h2>
-    <p>Download our beta version today or sign up to be the first to know!</p>
-    <div class="cta-buttons">
-        <button class="primary-button">Download</button>
-        <a href="#" class="secondary-button">Sign Up</a>
+    <section class="community-cta">
+      <h2>Join the MindSpace Community</h2>
+      <p>Download our beta version today or sign up to be the first to know!</p>
+      <div class="community-cta__buttons">
+        <button class="btn btn--primary">Download</button>
+        <a href="#" class="btn btn--secondary">Sign Up</a>
+      </div>
+      <div class="community-cta__image">
+        <img src="community mindspace.jpg" alt="Group of people in a community setting" />
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq__item">
+        <h3>What is MindSpace?</h3>
+        <p>MindSpace is an app to help students manage stress and improve wellness through simple exercises.</p>
+      </div>
+      <div class="faq__item">
+        <h3>How much does it cost?</h3>
+        <p>Currently, it's free to try! We may introduce premium features in the future.</p>
+      </div>
+      <div class="faq__item">
+        <h3>Can I use it on my phone?</h3>
+        <p>Yes! It works on both iOS and Android phones. Tablet support is coming soon.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__links">
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Blog</a>
+      <a href="#">FAQs</a>
+      <a href="#">Download App</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Cookie Policy</a>
     </div>
-    <div class="community-image-container">
-        <img src="community mindspace.jpg" alt="Group of people in a community setting">
-    </div>
-</section>
+    <p>&copy; 2025 MindSpace. All rights reserved.</p>
+  </footer>
 
+  <script>
+    function downloadApp() {
+      alert("Download functionality is coming soon!");
+    }
 
-    <footer>
-        <div class="footer-links">
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Blog Posts</a>
-            <a href="#">FAQs</a>
-            <a href="#">Download App</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Cookie Policy</a>
-        </div>
-        <p>&copy; 2025 MindSpace. All rights reserved.</p>
-    </footer>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
 
-    <script src="script.js"></script>
+    function validateForm(event) {
+      event.preventDefault();
+      alert("Thanks for contacting us! We'll be in touch soon.");
+    }
+  </script>
 </body>
+
 </html>
- </html>
